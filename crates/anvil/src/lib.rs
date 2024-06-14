@@ -68,6 +68,8 @@ mod shutdown;
 /// additional task management
 mod tasks;
 
+mod celo_config;
+
 /// contains cli command
 #[cfg(feature = "cmd")]
 pub mod cmd;

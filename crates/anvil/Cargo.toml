@@ -62,6 +62,8 @@ alloy-chains.workspace = true
 alloy-genesis.workspace = true
 alloy-trie.workspace = true
 
+reqwest.workspace = true
+
 # axum related
 axum.workspace = true
 hyper.workspace = true
@@ -72,7 +74,7 @@ tracing.workspace = true
 tracing-subscriber = { workspace = true, features = ["env-filter", "fmt"] }
 
 # async
-tokio = { workspace = true, features = ["time"] }
+tokio = { workspace = true, features = ["full"] }
 parking_lot = "0.12"
 futures = "0.3"
 async-trait = "0.1"

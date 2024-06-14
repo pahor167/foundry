@@ -193,7 +193,7 @@ impl NodeArgs {
             self.evm_opts.compute_units_per_second
         };
 
-        NodeConfig::default()
+        NodeConfig::celo()
             .with_gas_limit(self.evm_opts.gas_limit)
             .disable_block_gas_limit(self.evm_opts.disable_block_gas_limit)
             .with_gas_price(self.evm_opts.gas_price)
